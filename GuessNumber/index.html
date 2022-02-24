@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Угадай число</h1>
+<p>После нажатия кнопки «СТАРТ» на экране отображается таймер, инпут для ввода числа, кнопка «ПРОВЕРИТЬ» <br>
+    и кнопка «ОТМЕНА», фокус в инпуте. Компьютер «загадывает» рандомое число от 1 до 100.<br>
+    Игрок вводит в инпут любое число от 1 до 100 и нажимает на кнопку «ПРОВЕРИТЬ». </p>
+
+
+<div class="Game" id="Game">
+    <label id="UserInfo">Имя игрока <input type="text" id="UserName"></label>
+    <button type="button" id="ENTER" disabled>Начать</button>
+    <button type="button" id="BACK">Выход</button>
+</div>
+
+<div class="Buttons" id="Buttons">
+<button type="button" id="START">СТАРТ</button>
+<button type="button" id="CANCEL">ОТМЕНА</button>
+</div>
+
+<div class="GameField" id="GameField">
+<div class="Head">
+    <p id="Name"><b>Имя игрока:</b></p>
+    <p id="Timer"><b>Время игры:</b></p>
+    <p id="Attempts"><b>Число попыток:</b></p>
+</div>
+<div class="main">
+    <input type="number" id="number" autofocus>
+</div>
+<div class="footer">
+    <button type="button" id="Again">Еще раз</button>
+    <button type="button" id="Check">Проверить</button>
+    <button type="button" id="Exit">Выход</button>
+    <button type="button" id="Result">Результаты игроков</button>
+</div>
+<div class="DownFooter">
+    <h2 id="Cong"></h2>
+</div>
+</div>
+
+<table class="Table" id="Table">
+</table>
+
+<script src="Js.js"></script>
+</body>
+</html>
